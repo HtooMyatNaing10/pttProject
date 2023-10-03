@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+
+<body>
+
+    <div class="footer">
+        <small>@copyRight <span id="autoyear">2020</span>  , News Web Design</small>
+    </div>
+
+
+
+    <script type="text/javascript">
+        let date = new Date(); //date month year time min sec
+        console.log(date);
+
+        let getDate = date.getDate(); //date only
+        console.log(getDate);
+        /////array
+        //index=0(0 to 11)
+        //length=1(12)
+        // 0     1     2    3     4     5     6     7    8      9     10    11    
+        //jan , feb , mar ,apr , may , jun , jul , aug ,sept , oct , nov , dec
+        let getMonth = date.getMonth(); //month only(0--11)12month
+        console.log(getMonth);
+
+        let getYear = date.getFullYear(); //year only
+        //let getYear = date.getUTCFullYear(); //year only
+        console.log(getYear);
+
+        let getdate = date.getDay(); //date only
+        console.log(getdate);
+
+        let getMinute = date.getMinutes(); //minute only
+        console.log(getMinute);
+
+        let getSec = date.getSeconds(); //second only
+        console.log(getSec);
+        //1s=1000ms
+        //1 jan 1970 > upToNow
+        let time = new Date().getTime();
+        console.log(time); //1655855558
+        //Keyword
+        let now = Date.now();
+        console.log(now);
+        ///Get Html id to JavaScript Code and sent to html 
+        document.getElementById('autoyear').innerText = getYear;
+
+        ///M D Y : H M S
+        let birthday = new Date('7-10-2022');
+        birthday = new Date('8-1-2023 11:34'); //Tue Aug 01 2023 11:34:00 GMT+0630 (Myanmar Time)
+        birthday = new Date('Aug 1 2023 11:34'); //Tue Aug 01 2023 11:34:00 GMT+0630 (Myanmar Time)
+        birthday = new Date('August 1 2023 11:34'); //Tue Aug 01 2023 11:34:00 GMT+0630 (Myanmar Time)
+        birthday = new Date('8/1/2023 11:34'); //Tue Aug 01 2023 11:34:00 GMT+0630 (Myanmar Time)
+        console.log(birthday);
+        //1 ---12
+        birthday.setMonth(2); //Wed Mar 01 2023 11:34:00 GMT+0630 (Myanmar Time)
+        birthday.setDate(12); //Sun Mar 12 2023 11:34:00 GMT+0630 (Myanmar Time)
+        birthday.setFullYear(2008) //Wed Mar 12 2008 11:34:00 GMT+0630 (Myanmar Time)
+
+        birthday.setHours(15); //Wed Mar 12 2008 15:34:00 GMT+0630 (Myanmar Time)
+        birthday.setMinutes(30); //Wed Mar 12 2008 15:30:00 GMT+0630 (Myanmar Time)
+        birthday.setSeconds(50); //Wed Mar 12 2008 15:30:50 GMT+0630 (Myanmar Time)
+        birthday.setTime(15454); //Thu Jan 01 1970 06:30:15 GMT+0630 (Myanmar Time)
+        console.log(birthday);
+    </script>
+</body>
+
+</html>

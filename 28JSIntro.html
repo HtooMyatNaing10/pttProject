@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Intro</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        console.log("ag ag");
+        console.log('zaw zaw');
+        console.log(`zaw zaw`);
+        //
+        console.log(500);
+        console.log('600');
+        console.log("600");
+        console.log(`800`);
+        ///
+        console.log('aung aung', 'zaw zaw', "maung maung");
+        console.log(100, 200, 300, 400);
+        console.log('aung aung', 400);
+        //
+        console.log(true);
+        console.log(false);
+        //
+        console.log(10 + 10); //20
+        console.log(10 + '40'); //1040
+        console.log('10' + '40'); //1040
+        console.log('aung aung' + '40'); //aung aung40
+        //
+        console.log(true + true) //2
+        console.log(true + false) //1
+        console.log(true + 50) //51
+        console.log(false + 50) //50
+        console.log('true' + 50) //true50
+        console.log('aung aung' + true) //aung aungtrue
+        console.log(false + 'zaw zaw') //falsezaw zaw
+            //
+            //window.alert('Hello User');
+            //window.alert('Save User');
+            //alert('Are you Ready to Learn Js');
+
+        //Variable()
+        //1)var
+        //2)let
+        //3)const
+
+        //var/let/const firstName=value;
+
+        var fullname = "Aung Kyaw Kyaw";
+        console.log('fullname'); //fullname
+        console.log("fullname"); //fullname
+        console.log(`fullname`); //fullname
+        console.log(fullname); //Aung Kyaw Kyaw
+
+        console.log("My friend name is fullname");
+        console.log('My friend name is fullname');
+        console.log(`My friend name is fullname`);
+        //concat(+)
+        console.log(`My friend name is ` + fullname);
+        console.log(`My friend name is` + ' ' + fullname);
+        //Backtists(``)
+        var lady = "Honey Nway Oo";
+        console.log(`We love lady`) //We love lady
+        console.log(`${lady}`) //Honey Nway Oo
+        console.log(`We love ${lady}`) //We love Honey Nway Oo
+            //Concatenate(+)
+        const name1 = 'Kyal Sin';
+        const name2 = "Kyar Shi";
+        console.log("My name is " + name1 + `.You can call me ${name2}.`);
+
+        var num1 = 100;
+        var num2 = 200;
+        console.log(num1);
+        console.log(num2);
+        console.log(num1 + num2);
+        console.log(num1, num2);
+        console.log("num1,num2"); //num1+num2
+        console.log('num1+num2'); //num1+num2
+        console.log(`num1+num2`); //num1+num2
+        console.log(`${num1+num2}`); //300
+        console.log(`${num1}+${num2}`); //100+200
+        console.log(`${num1}` + `${num2}`); //100200
+
+        /////
+        //Overwrite or override(var and let can.const cannot)
+        let num3 = 30;
+        var num4 = 40;
+        console.log("num3 value is " + num3);
+        console.log("num4 value is " + num4);
+        console.log(num3 + num4);
+        num3 = 50;
+        console.log("num3 value is " + num3);
+        console.log(num3 + num4);
+
+        /////
+        //Special Escape Character(\)
+        console.log("Hay i am working,do you see now");
+        console.log("Hay i am 'working',do you see now");
+        console.log('Hay i am "working",do you see now');
+        //console.log('Hay i am 'working',do you see now');
+        //console.log("Hay i am working,do you see now");
+        console.log("Hay i'm working,do you see now");
+
+        let x = 'He\'s U Ba';
+        let y = "He is my Uncle"
+        console.log(`${x} ${y}`);
+        ////
+        //document
+        document.write(`${x} ${y}`);
+    </script>
+</body>
+
+</html>
+
+<!-- JS Integreate HTML
+
+1)Internal
+2)External
+3)Inline
+-->
+
+<!-- Data Type
+
+1)String
+2)Number
+3)Boolean
+-->
+
+<!-- comment 
+
+1)single line comment  (//)
+2)multi line comment  (/* */)
+-->
+
+<!-- Variable Name 
+
+We can use 
+letter,number,_,$
+var firstname <-i recommend to use this
+var FirstName
+var first_Name
+var $Firstname
+var number1  <- i recommand to use this
+
+We can't name 
+var first name
+var 
+
+-->

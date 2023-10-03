@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        let cal;
+        cal = 2.8; //2.8
+        cal = 2.4; //2.4
+        //(>.5  ==> +1)
+        cal = Math.round(2.5); //3
+        cal = Math.round(2.4); //2
+        //(>.1 ==> +1)
+        cal = Math.ceil(2.5) //3
+        cal = Math.ceil(2.4) //3
+        cal = Math.ceil(2.1) //3
+        cal = Math.ceil(2.0) //2
+            //(>.1 ==> 0)
+        cal = Math.floor(2.6) //2
+        cal = Math.floor(2.4) //2
+        cal = Math.floor(2.0) //2
+            //
+        cal = Math.sqrt(64); //8
+        //pow(base,power)
+        cal = Math.pow(4, 8); //65536
+        //absolute value
+        cal = Math.abs(100); //100
+        cal = Math.abs(100.52); //100.52
+        cal = Math.abs(-100.52); //100.52
+        //minimun number
+        cal = Math.min(8, 2, 5, 9, 1, 4, 7, 5); //1
+        //maximum number
+        cal = Math.max(8, 2, 5, 9, 1, 4, 7, 5); //9
+        //Random number
+        cal = Math.floor(Math.random() * 10000);
+        console.log(cal);
+    </script>
+</body>
+
+</html>

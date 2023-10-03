@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals[Javascript Object]</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        //const name = "aung aung";
+        //console.info(name);
+
+        let students = {
+            firstname: 'Honey',
+            middlename: 'Nway',
+            lastname: 'Oo',
+            age: 22
+        };
+
+        console.info(students);
+        console.table(students);
+
+        console.log(students.firstname); //Honey
+        console.log(students.middlename); //Nway
+        console.log(students.lastname); //Oo
+        console.log(students.age); //22
+
+
+        console.log(typeof(students.age)); //number
+        console.log(typeof(students.firstname)); //string
+
+        const persons = {
+            firstname: 'Kyaw Kyaw',
+            lastname: 'Htay Lwin',
+            age: 42,
+            single: false,
+            email: "kyawkyawhtay@gmail.com",
+
+            address: {
+                street: "62st",
+                city: 'Mandalay'
+            },
+            hometown: {
+                capital: "Yangon",
+
+            },
+            hobbies: ['sleep', 'eat', 'code', 'music', 'sport']
+        };
+        console.log(persons);
+        console.table(persons);
+    </script>
+</body>
+
+</html>

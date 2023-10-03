@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Name :Aung Aung</li>
+        <li>Age :25</li>
+        <li>Job :Developer</li>
+        <li>City :Mandalay</li>
+    </ul>
+    <hr>
+
+    <script type="text/javascript">
+        //let fullname; oki=undified
+        //var fullname; oki=undified
+        //const fullname;(syntax error)
+        //fullname="Mya Mya";
+        // console.log(fullname);
+
+        const name = "Honey Nway Oo";
+        const age = "23";
+        const job = "Model";
+        const city = "Yangon";
+
+        let myListStyle;
+        //myListStyle = '<h1>Hello World</h1>';
+        //myListStyle = "<h1>Hello World</h1>";
+        //myListStyle = `<h1>Hello World</h1>`;
+        //////////
+        //WIthout Template String
+        // myListStyle = '<ul><li>Name : ' + name + '</li><li>Age : ' + age + '</li><li>Job :' + job + '</li><li>City :' + city + '</li></ul>';
+        ////
+        // myListStyle= "<ul>"+
+        // "<li>Name : "+ name+ "</li>"+
+        //"<li>Age : "+age+"</li>"+
+        //"<li>Job : " +job+"</li>"+
+        //"<li>City :" +city+"</li>"+
+        //"</ul>";
+        ///////////////////////////
+        //With Template String(``)
+        myListStyle = ` <ul>
+            <li>Name : ${name}</li>
+            <li>Age : ${age}</li>
+            <li>Job : ${job}</li>
+            <li>City :${city}</li>
+            </ul>`;
+        console.log(myListStyle);
+        document.write(myListStyle);
+    </script>
+</body>
+
+</html>
